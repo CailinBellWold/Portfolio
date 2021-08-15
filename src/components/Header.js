@@ -29,7 +29,7 @@ function Header() {
   return (
 <header>
     <nav className='navbar navbar-expand-lg navbar-light fixed-top px-3 cmb-navbar'>
-      <a className='navbar-brand' href='#'>Cailin Bell Wold</a>
+      <a className='navbar-brand' href='/'>Cailin Bell Wold</a>
       <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarToggler' aria-controls='navbarToggler' aria-expanded='false' aria-label='Toggle navigation'>
         <span className='navbar-toggler-icon'></span>
       </button>
@@ -54,7 +54,9 @@ function Header() {
          </ul>
          </div>
    </nav>
+   <main>
    {renderPage()}
+   </main>
 </header>
 
   );
