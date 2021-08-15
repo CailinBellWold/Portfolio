@@ -6,7 +6,7 @@ import './NavTabs.css';
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav cmb-navbar">
+    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item">
         <a
           href="#about"

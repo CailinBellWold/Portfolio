@@ -1,20 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NavTabs from './NavTabs';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 import './Header.css';
-
-// By importing the Header.css file, it is added to the DOM whenever this component loads
-
-// We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
-// Unlike regular HTML, a JSX style property must be an object instead of a string
-// On a style object, we camelCase all property names, and put all of the values in quotes
-// Non quoted values default to "pixels", e.g. height, margin, padding
-
-// We use JSX curly braces to evaluate the style object
+import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 
 function Header() {
+  const [currentPage, setCurrentPage] = useState('About');
+
+  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  const renderPage = () => {
+    if (currentPage === 'About') {
+      return <About/>;
+    }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    return <Resume />;
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
-    <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Welcome</h1>
-    </header>
+<header>
+    <nav className='navbar navbar-expand-lg navbar-light fixed-top px-3 cmb-navbar'>
+      <a className='navbar-brand' href='#'>Cailin Bell Wold</a>
+      <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarToggler' aria-controls='navbarToggler' aria-expanded='false' aria-label='Toggle navigation'>
+        <span className='navbar-toggler-icon'></span>
+      </button>
+      <div class='collapse navbar-collapse' id='navbarToggler'>
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+       <ul className='navbar-nav d-flex flex-row'>
+          <li className='nav-item me-3 me-lg-0'>
+               <a className='nav-link' href='https://www.linkedin.com/in/cailinbellwold/' target='_blank' rel='noreferrer noopener'>
+              <FaLinkedinIn />
+              </a>
+           </li>
+          <li className='nav-item me-3 me-lg-0'>
+               <a className='nav-link' href='https://github.com/CailinBellWold' target='_blank' rel='noreferrer noopener'> 
+               <FaGithub />
+             </a>
+          </li>
+            <li className='nav-item me-3 me-lg-0'>
+              <a className='nav-link' href='mailto:cmbellwold@gmail.com?subject=Contact from Portfolio Site' target='_blank' rel='noreferrer noopener'>
+              <FaEnvelope />
+              </a>
+             </li>
+         </ul>
+         </div>
+   </nav>
+   {renderPage()}
+</header>
+
   );
 }
 

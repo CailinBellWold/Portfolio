@@ -1,5 +1,5 @@
 import React from 'react';
-var Headshot = require('../../assets/Headshot-Square.jpg');
+import Headshot from "../../assets/Headshot-Square.jpg";
 
 export default function About() {
   return (

@@ -1,30 +1,28 @@
 import React from 'react';
 import './Footer.css';
+import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 
-// By importing the Header.css file, it is added to the DOM whenever this component loads
-
-// We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
-// Unlike regular HTML, a JSX style property must be an object instead of a string
-// On a style object, we camelCase all property names, and put all of the values in quotes
-// Non quoted values default to "pixels", e.g. height, margin, padding
-
-const styles = {
-  headerStyle: {
-    background: 'red',
-  },
-  headingStyle: {
-    fontSize: '100px',
-  },
-};
-
-// We use JSX curly braces to evaluate the style object
-
-function Header() {
+function Footer() {
   return (
-    <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Welcome</h1>
-    </header>
+    <footer className='bg-light text-lg-start'>
+      <section id='contact' className='text-center py-4 align-items-center cmb-contact'>
+        <h4>Contact</h4>
+          <a className='cmb-fa px-4' href='https://www.linkedin.com/in/cailinbellwold/' target='_blank' rel='noreferrer noopener'>
+            <FaLinkedinIn />
+          </a>
+          <a className='cmb-fa px-3' href='https://github.com/CailinBellWold' target='_blank' rel='noreferrer noopener'> 
+            <FaGithub />
+          </a>
+          <a className='cmb-fa px-3' href='mailto:cmbellwold@gmail.com?subject=Contact from Portfolio Site' target='_blank' rel='noreferrer noopener'>
+            <FaEnvelope />
+          </a>
+      </section>
+
+      <div className='text-center p-3 cmb-madeforyou'>
+        <p>Made for YOU!<br/>©2021 Cailin M. Bell Wold</p>
+      </div>
+    </footer>
   );
 }
 
-export default Header;
+export default Footer;
