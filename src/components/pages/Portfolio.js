@@ -2,23 +2,22 @@ import React from 'react';
 import CodeQuiz from "../../assets/CodeQuiz.png";
 import GiftList from "../../assets/GiftList.png";
 import MoodTracker from "../../assets/MoodTracker.png";
-import PasswordGenerator from "../../assets/PasswordGenerator.png";
+import TechBlog from "../../assets/TechBlog.png";
 import WeatherDashboard from "../../assets/WeatherDashboard.png";
 import WorkDayScheduler from "../../assets/WorkDayScheduler.png";
 
 export default function Portfolio() {
   return (
-    <div class='container'>
-<section id='work' className='text-center'>
-      <h3 className='mb-5'><strong>Work</strong></h3>
+    <div className='container'>
+      <section id='work' className='text-center'>
+      <h1 className='mb-1'>Recent Work</h1>
+      <p>These are projects that I have completed recently.</p>
         <div className='row'>
 
-          <div className='col-lg-4 col-md-6 mb-4'>
+          <div className='col-lg-4 col-md-6 p-4'>
             <div className='card'>
               <div className='bg-image'>
                 <img src={GiftList} className='img-fluid' alt='Screenshot from Gift List App'/>
-                <a href='#!'>
-                </a>
               </div>
               <div className='card-body'>
                 <h5 className='card-title'>Gift List</h5>
@@ -31,28 +30,40 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-4 col-md-12 mb-4'>
+          <div className='col-lg-4 col-md-12 p-4'>
             <div className='card'>
               <div className='bg-image'>
                 <img src={MoodTracker} className='img-fluid' alt='Screenshot from Mood Tracker App'/>
-                <a href='#!'>
-                </a>
               </div>
             <div className='card-body'>
               <h5 className='card-title'>Mood Tracker</h5>
                 <p className='card-text'>HTML | CSS | JS | jQuery | Bulma | API</p>
-                <a href='https://cailinbellwold.github.io/Mood-Tracker/' target='_blank' rel='noreferrer noopener' className='btn btn-primary'>Deployed App</a>
+                <a href='https://cailinbellwold.github.io/Project-1-Mood-Tracker/' target='_blank' rel='noreferrer noopener' className='btn btn-primary'>Deployed App</a>
                 <a href='https://github.com/CailinBellWold/Mood-Tracker' target='_blank' rel='noreferrer noopener' className='btn btn-secondary'>GitHub Repo</a>
             </div>
           </div>
         </div>
 
-          <div className='col-lg-4 col-md-6 mb-4'>
+        <div className='col-lg-4 col-md-6 p-4'>
+            <div className='card'>
+              <div className='bg-image'>
+                <img src={TechBlog} className='img-fluid' alt='Screenshot from Tech Blog App'/>
+              </div>
+              <div className='card-body'>
+                <h5 className='card-title'>Tech Blog</h5>
+                <p className='card-text'>
+                  MySQL | Express | Sequelize
+                </p>
+                <a href='https://tech-blog-cailin.herokuapp.com/' target='_blank' rel='noreferrer noopener' className='btn btn-primary'>Deployed App</a>
+                <a href='https://github.com/CailinBellWold/Tech-Blog' target='_blank' rel='noreferrer noopener' className='btn btn-secondary'>GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+
+          <div className='col-lg-4 col-md-6 p-4'>
             <div className='card'>
               <div className='bg-image'>
                 <img src={CodeQuiz} className='img-fluid' alt='Screenshot from Code Quiz App'/>
-                <a href='#!'>
-                </a>
               </div>
               <div className='card-body'>
                 <h5 className='card-title'>Code Quiz</h5>
@@ -65,12 +76,10 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-4 col-md-6 mb-4'>
+          <div className='col-lg-4 col-md-6 p-4'>
             <div className='card'>
               <div className='bg-image'>
                 <img src={WeatherDashboard} className='img-fluid' alt='Screenshot from Weather Dashboard App'/>
-                <a href='#!'>
-                </a>
               </div>
               <div className='card-body'>
                 <h5 className='card-title'>Weather Dashboard</h5>
@@ -83,12 +92,10 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-4 col-md-6 mb-4'>
+          <div className='col-lg-4 col-md-6 p-4'>
             <div className='card'>
               <div className='bg-image'>
                 <img src={WorkDayScheduler} className='img-fluid' alt='Screenshot from Workday Scheduler App' />
-                <a href='#!'>
-                </a>
               </div>
               <div className='card-body'>
                 <h5 className='card-title'>Work Day Scheduler</h5>
@@ -100,23 +107,7 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-md-6 mb-4'>
-            <div className='card'>
-              <div className='bg-image'>
-                <img src={PasswordGenerator} className='img-fluid' alt='Screenshot from Password Generator App'/>
-                <a href='#!'>
-                </a>
-              </div>
-              <div className='card-body'>
-                <h5 className='card-title'>Password Generator</h5>
-                <p className='card-text'>
-                  HTML | CSS | JS
-                </p>
-                <a href='https://cailinbellwold.github.io/Password-Generator/' target='_blank' rel='noreferrer noopener' className='btn btn-primary'>Deployed App</a>
-                <a href='https://github.com/CailinBellWold/Password-Generator' target='_blank' rel='noreferrer noopener' className='btn btn-secondary'>GitHub Repo</a>
-              </div>
-            </div>
-          </div>
+
         </div>
     </section>
     </div>

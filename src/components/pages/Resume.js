@@ -1,21 +1,69 @@
 import React from 'react';
+import { FaFileDownload } from 'react-icons/fa';
+import Button from 'react-bootstrap/Button';
+import CV from "../../assets/CailinBellWoldResume.pdf";
 
 export default function Resume() {
   return (
-    <div>
-      <h1>Resume Placeholder Text</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className='container'>
+      <section id='skills'>
+        <h1 className='text-center mb-5'>Skills</h1>
+        <Button className='resume' href={CV} target="_blank"><FaFileDownload /> Download CV</Button>
+        <div className='row'>
+          <div className='col-12'>
+
+            <div className='row'>
+
+              <div className='col-4'>
+                <h2>Front-End</h2>
+                <ul className='list-unstyled'>
+                  <li>Bootstrap</li>
+                  <li>Bulma</li>
+                  <li>CSS</li>
+                  <li>Handlebars</li>
+                  <li>HTML</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>Moment.js</li>
+                  <li>React.js</li>
+                </ul>
+              </div>
+
+              <div className='col-4'>
+                <h2>Back-End</h2>
+                <ul className='list-unstyled'>
+                  <li>Apollo Server</li>
+                  <li>Express</li>
+                  <li>Node.js</li>
+                  <li>NPM</li>
+                  <li>MySQL</li>
+                  <li>RESTful API</li>
+                </ul>
+              </div>
+
+              <div className='col-4'>
+                <h2>Version Control</h2>
+                <ul className='list-unstyled'>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+
+              <div className='col-4'>
+                <h2>Other</h2>
+                <ul className='list-unstyled'>
+                  <li>Apollo Client</li>
+                  <li>GraphQL</li>
+                  <li>Heroku</li>
+                  <li>Insomnia</li>
+                  <li>Visual Studio</li>
+                </ul>
+              </div>
+
+            </div>
+            </div>    
+        </div>
+      </section>
     </div>
   );
 }
