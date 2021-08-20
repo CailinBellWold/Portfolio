@@ -39,10 +39,14 @@
 
 html {
   scroll-behavior: smooth;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--c-llneutral);
 }
 
 body {
-  background-color: var(--c-llneutral);
+  /* background-color: var(--c-llneutral); */
   font-family: 'Public Sans', sans-serif;
   color: var(--c-ddblue);
 }
@@ -50,31 +54,57 @@ body {
 main {
   padding-top: 8rem;
   padding-bottom: 8rem;
+  background-color: var(--c-llneutral);
 }
 
-.cmb-navbar {
-  background-image: linear-gradient(var(--c-lneutral), var(--c-neutral));
-  box-shadow: 8px 10px 20px var(--c-dtaupe);
+header {
+  background-color: var(--c-llneutral);
 }
-  
+
+.navbar {
+  height: 6rem !important;
+  background-color: var(--c-llneutral);
+}
+
 .navbar-brand {
-  font-size: 1.7em;
-  font-weight: bold;
-  color: var(--c-dpink) !important;
-  text-shadow: 8px 10px 10px var(--c-taupe);
+  font-family: 'Lora', serif;
+  font-size: 2em !important;
+  height: 4rem !important;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: var(--c-ddslategray) !important;
+  /* text-shadow: 8px 10px 10px var(--c-taupe); */
 }
+
+/* .navbar-brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: .5em !important;
+  font-weight: 500;
+  margin-top: -3rem !important;
+  color: var(--c-ddslategray) !important;
+} */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--c-raspberrysorbet);
+  border-width: medium;
+} 
+
 
 #name {
   font-size: 1.15em;
   font-weight: bold;
 }
 
-h1, 
+h1,
 h2, 
 h3, 
 h4, 
 h5 {
-  font-weight: bolder;
+  font-family: 'Lora', sans-serif;
+  /* font-weight: bolder; */
 }
 
 .cmb-headshot {
@@ -95,8 +125,6 @@ h5 {
 /* #resume-text {
   color: var(--c-dpink);
 } */
-
-
 
 .card {
   border-radius: 4px;
@@ -222,11 +250,6 @@ h5 {
 
   .text-muted {
     color: var(--c-llneutral) !important;
-  }
-
-  .cmb-navbar {
-    background-image: linear-gradient(var(--c-lneutral), var(--c-neutral));
-    box-shadow: none;
   }
 
   .card-title,

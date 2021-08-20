@@ -7,7 +7,7 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className='footer'>
+    <Container fluid className='footer px-5'>
       <Row>
         <Col className='d-flex justify-content-start'>
           <a className='cmb-fa m-2' href='https://www.linkedin.com/in/cailinbellwold/' target='_blank' rel="noreferrer">

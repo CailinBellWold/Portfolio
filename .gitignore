@@ -26,5 +26,5 @@ yarn-error.log*
 
 # Homework Instructions
 HomeworkInstructions/
-
+.vscode/
 README-REACT.md

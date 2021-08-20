@@ -5,12 +5,12 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './Header.css';
-import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 function Header() {
   const [currentPage, setCurrentPage] = useState('About');
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage === 'About') {
       return <About/>;
@@ -28,35 +28,31 @@ function Header() {
 
   return (
     <header>
-      <nav className='navbar navbar-expand-lg navbar-light fixed-top px-3 cmb-navbar'>
-        <a className='navbar-brand' href='/'>Cailin Bell Wold</a>
-        <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarToggler' aria-controls='navbarToggler' aria-expanded='false' aria-label='Toggle navigation'>
-          <span className='navbar-toggler-icon'></span>
+      <div className='container'>
+      <nav className='navbar navbar-expand-lg navbar-light fixed-top px-5 py-4'>
+
+        <a className='navbar-brand col-8' href='/'>cailín bell wold</a>
+
+        <button class='navbar-toggler custom-toggler' id='hamburger' type='button' data--bs-toggle='collapse' data--bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+            <span class='navbar-toggler-icon'></span>
         </button>
-        <div className='collapse navbar-collapse' id='navbarToggler'>
+
+        {/* <div className='mx-auto order-0'>
+          <NavbarToggle className='custom-toggler' type='button' data-bs-toggle='collapse' data-bs-target='.dual-collapse2'>
+            <span className='navbar-toggler-icon'></span>
+          </NavbarToggle>
+        </div> */}
+        <NavbarCollapse className='navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 flex-row-reverse'>
           <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-            <ul className='navbar-nav d-flex flex-row'>
-              <li className='nav-item me-3 me-lg-0'>
-                <a className='nav-link' href='https://www.linkedin.com/in/cailinbellwold/' target='_blank' rel='noreferrer noopener'>
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className='nav-item me-3 me-lg-0'>
-                <a className='nav-link' href='https://github.com/CailinBellWold' target='_blank' rel='noreferrer noopener'> 
-                  <FaGithub />
-                </a>
-              </li>
-              <li className='nav-item me-3 me-lg-0'>
-                <a className='nav-link' href='mailto:cmbellwold@gmail.com?subject=Contact from Portfolio Site' target='_blank' rel='noreferrer noopener'>
-                  <FaEnvelope />
-                </a>
-              </li>
-            </ul>
-        </div>
+        </NavbarCollapse>
       </nav>
+
+      {/* TO DO: If I try to move Main outside of the header, I'm getting an error. Why? */}
       <main>
         {renderPage()}
       </main>
+
+      </div>
     </header>
   );
 }

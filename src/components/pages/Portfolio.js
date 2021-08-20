@@ -10,8 +10,9 @@ export default function Portfolio() {
   return (
     <div className='container'>
       <section id='work' className='text-center'>
-      <h1 className='mb-1'>Recent Work</h1>
-      <p>These are projects that I have completed recently.</p>
+      <h1 className='mb-1'>work</h1>
+      <p>These are projects that I have recently completed.</p>
+      <hr/>
         <div className='row'>
 
           <div className='col-lg-4 col-md-6 p-4'>

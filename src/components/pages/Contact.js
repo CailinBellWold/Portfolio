@@ -13,8 +13,9 @@ export default function Contact() {
   return (
     <div className='container'>
       <section className='contact mb-5'>
-        <h1 className='text-center'>Get In Touch</h1>
+        <h1 className='text-center'>get in touch</h1>
         <p className='text-center mx-auto'>I am available for employment, freelance projects or paid internships.</p>
+        <hr/>
 
         <div className='row'>
           <div className='col-md-9'>
@@ -52,7 +53,8 @@ export default function Contact() {
               </Form.Group>
             </div>
 
-                  {/* <p>{result}</p> */}
+                  <p>DEV NOTE: This app is not connected to a back-end server, so messages cannot be transmitted via this form.</p>
+                     {/* <p>{result}</p> */}
               <Button variant='primary' type='submit'>Send</Button>
             </Form>
           </div>

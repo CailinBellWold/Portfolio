@@ -7,15 +7,17 @@ export default function Resume() {
   return (
     <div className='container'>
       <section id='skills'>
-        <h1 className='text-center mb-5'>Skills</h1>
-        <Button className='resume' href={CV} target="_blank"><FaFileDownload /> Download CV</Button>
+        <h1 className='text-center mb-1'>skills</h1>
+        <p className='text-center'><Button className='text-center' href={CV} target="_blank"><FaFileDownload /> Download CV</Button></p>
+        <hr/>
+
         <div className='row'>
           <div className='col-12'>
 
             <div className='row'>
 
               <div className='col-4'>
-                <h2>Front-End</h2>
+                <h3>Front-End</h3>
                 <ul className='list-unstyled'>
                   <li>Bootstrap</li>
                   <li>Bulma</li>
@@ -30,7 +32,7 @@ export default function Resume() {
               </div>
 
               <div className='col-4'>
-                <h2>Back-End</h2>
+                <h3>Back-End</h3>
                 <ul className='list-unstyled'>
                   <li>Apollo Server</li>
                   <li>Express</li>
@@ -42,7 +44,7 @@ export default function Resume() {
               </div>
 
               <div className='col-4'>
-                <h2>Version Control</h2>
+                <h3>Version Control</h3>
                 <ul className='list-unstyled'>
                   <li>Git</li>
                   <li>GitHub</li>
@@ -50,7 +52,7 @@ export default function Resume() {
               </div>
 
               <div className='col-4'>
-                <h2>Other</h2>
+                <h3>Other</h3>
                 <ul className='list-unstyled'>
                   <li>Apollo Client</li>
                   <li>GraphQL</li>
@@ -61,7 +63,7 @@ export default function Resume() {
               </div>
 
             </div>
-            </div>    
+            </div>
         </div>
       </section>
     </div>
