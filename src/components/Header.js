@@ -8,7 +8,6 @@ import './Header.css';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
 
-
 function Header() {
   const [currentPage, setCurrentPage] = useState('About');
 
@@ -29,28 +28,28 @@ function Header() {
 
   return (
     <>
-    <header>
-      <div className='container'>
-      <nav className='navbar navbar-expand-lg navbar-light fixed-top px-5 py-4'>
+      <header>
+        <div className='container'>
+          <nav className='navbar navbar-expand-lg navbar-light fixed-top px-5 py-4'>
 
-        <a className='navbar-brand col-7' href='/'>cailín bell wold<br/><span>FULL STACK WEB DEVELOPER</span></a>
+            <a className='navbar-brand col-7' href='/'>cailín bell wold<br/><span>FULL STACK WEB DEVELOPER</span></a>
 
-        <button className='navbar-toggler custom-toggler' id='hamburger' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
-            <span className='navbar-toggler-icon'></span>
-        </button>
+            <button className='navbar-toggler custom-toggler' id='hamburger' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+              <span className='navbar-toggler-icon'></span>
+            </button>
 
-        <NavbarCollapse className='navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 flex-row-reverse' id='navbarSupportedContent'>
-          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-        </NavbarCollapse>
-      </nav>
+            <NavbarCollapse className='navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 flex-row-reverse' id='navbarSupportedContent'>
+              <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+            </NavbarCollapse>
+          </nav>
 
-      </div>
-    </header>
-          {/* TO DO: If I try to move Main outside of the header, I'm getting an error. Why? */}
-          <main>
-          {renderPage()}
-        </main>
-      </>
+        </div>
+      </header>
+
+      <main>
+        {renderPage()}
+      </main>
+    </>
   );
 }
 

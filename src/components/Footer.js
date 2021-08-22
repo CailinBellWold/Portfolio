@@ -6,14 +6,15 @@ import { Container, Row, Col } from "react-bootstrap";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
   return (
     <Container fluid className='footer px-5'>
       <Row>
-        <Col className='d-flex col-5 justify-content-start'>
-        <p className='text-uppercase cmb-cr'>© {year} cailín bell wold</p>
-          </Col>
-          
-          <Col className='d-flex col-7 justify-content-end'>
+        {/* <Col className='d-flex col-5 justify-content-start'>
+          <p className='text-uppercase cmb-cr'>© {year} cailín bell wold</p>
+        </Col> */}
+
+        <Col className='d-flex col-12 justify-content-end'>
           <a className='cmb-fa m-2' href='https://www.linkedin.com/in/cailinbellwold/' target='_blank' rel="noreferrer">
             <FaLinkedinIn />
           </a>
@@ -26,8 +27,8 @@ function Footer() {
           <a className='cmb-fa m-2' href='https://stackoverflow.com/users/15320524/cailin-bell-wold' target='_blank' rel="noreferrer">
             <FaStackOverflow />
           </a>
-          </Col>
-        
+        </Col>
+
       </Row>
     </Container>
   );
