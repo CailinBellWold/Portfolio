@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.3c09cb1a.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.9df552f8.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.9df552f8.chunk.js.map",
+    "main.css": "/Portfolio-React/static/css/main.e434f582.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.0de2292f.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.0de2292f.chunk.js.map",
     "runtime-main.js": "/Portfolio-React/static/js/runtime-main.9963365c.js",
     "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.9963365c.js.map",
     "static/css/2.818011ed.chunk.css": "/Portfolio-React/static/css/2.818011ed.chunk.css",
-    "static/js/2.2bd3419f.chunk.js": "/Portfolio-React/static/js/2.2bd3419f.chunk.js",
-    "static/js/2.2bd3419f.chunk.js.map": "/Portfolio-React/static/js/2.2bd3419f.chunk.js.map",
+    "static/js/2.27a84fa3.chunk.js": "/Portfolio-React/static/js/2.27a84fa3.chunk.js",
+    "static/js/2.27a84fa3.chunk.js.map": "/Portfolio-React/static/js/2.27a84fa3.chunk.js.map",
     "static/js/3.e68e5d30.chunk.js": "/Portfolio-React/static/js/3.e68e5d30.chunk.js",
     "static/js/3.e68e5d30.chunk.js.map": "/Portfolio-React/static/js/3.e68e5d30.chunk.js.map",
     "index.html": "/Portfolio-React/index.html",
     "static/css/2.818011ed.chunk.css.map": "/Portfolio-React/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.3c09cb1a.chunk.css.map": "/Portfolio-React/static/css/main.3c09cb1a.chunk.css.map",
-    "static/js/2.2bd3419f.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.2bd3419f.chunk.js.LICENSE.txt",
+    "static/css/main.e434f582.chunk.css.map": "/Portfolio-React/static/css/main.e434f582.chunk.css.map",
+    "static/js/2.27a84fa3.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.27a84fa3.chunk.js.LICENSE.txt",
     "static/media/CailinBellWoldResume.6c41f04f.pdf": "/Portfolio-React/static/media/CailinBellWoldResume.6c41f04f.pdf",
     "static/media/CodeQuiz.7e4fe2d1.png": "/Portfolio-React/static/media/CodeQuiz.7e4fe2d1.png",
     "static/media/GiftList.270a5597.png": "/Portfolio-React/static/media/GiftList.270a5597.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.9963365c.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.2bd3419f.chunk.js",
-    "static/css/main.3c09cb1a.chunk.css",
-    "static/js/main.9df552f8.chunk.js"
+    "static/js/2.27a84fa3.chunk.js",
+    "static/css/main.e434f582.chunk.css",
+    "static/js/main.0de2292f.chunk.js"
   ]
 }
