@@ -1,5 +1,5 @@
 # 20 React Portfolio
-[![License: MIT](https://img.shields.io/github/license/CailinBellWold/Profile-React?style=plastic)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/github/license/CailinBellWold/Portfolio-React?style=plastic)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -26,7 +26,7 @@ A third **updated portfolio** and other professional materials, shared as I buil
 
 ## Deployed Application
 
-<!-- https://cailinbellwold.github.io/Portfolio-React/ -->
+https://cailinbellwold.github.io/Portfolio-React/
 
 ## MIT License
 &copy;2021 Cailin Bell Wold

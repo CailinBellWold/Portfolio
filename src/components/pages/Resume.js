@@ -16,7 +16,7 @@ export default function Resume() {
 
             <div className='row'>
 
-              <div className='col-4'>
+              <div className='col-3'>
                 <h3>Front-End</h3>
                 <ul className='list-unstyled'>
                   <li>Bootstrap</li>
@@ -31,7 +31,7 @@ export default function Resume() {
                 </ul>
               </div>
 
-              <div className='col-4'>
+              <div className='col-3'>
                 <h3>Back-End</h3>
                 <ul className='list-unstyled'>
                   <li>Apollo Server</li>
@@ -43,7 +43,7 @@ export default function Resume() {
                 </ul>
               </div>
 
-              <div className='col-4'>
+              <div className='col-3'>
                 <h3>Version Control</h3>
                 <ul className='list-unstyled'>
                   <li>Git</li>
@@ -51,7 +51,7 @@ export default function Resume() {
                 </ul>
               </div>
 
-              <div className='col-4'>
+              <div className='col-3'>
                 <h3>Other</h3>
                 <ul className='list-unstyled'>
                   <li>Apollo Client</li>

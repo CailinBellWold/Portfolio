@@ -8,6 +8,7 @@ import './Header.css';
 // import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
 
+
 function Header() {
   const [currentPage, setCurrentPage] = useState('About');
 
@@ -32,7 +33,7 @@ function Header() {
       <div className='container'>
       <nav className='navbar navbar-expand-lg navbar-light fixed-top px-5 py-4'>
 
-        <a className='navbar-brand col-8' href='/'>cailín bell wold<br/><span>FULL STACK WEB DEVELOPER</span></a>
+        <a className='navbar-brand col-7' href='/'>cailín bell wold<br/><span>FULL STACK WEB DEVELOPER</span></a>
 
         <button className='navbar-toggler custom-toggler' id='hamburger' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon'></span>
