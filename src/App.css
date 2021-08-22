@@ -246,7 +246,22 @@ h5 {
 
 .cmb-fa:hover {
   color: var(--c-sienna);
-  text-shadow: 8px 10px 10px var(--c-llneutral);
+}
+
+.cmb-fa-nolink {
+  padding-top: .3em;
+  text-decoration: none;
+  color: var(--c-lsienna);
+  font-size: 1.25em;
+}
+
+.cmb-fa-nolink p {
+  font-family: 'Roboto', sans-serif !important;
+  color: var(--c-lgrey) !important;
+  line-height: 1.625rem !important;
+  font-weight: 300 !important;
+  font-style: normal; 
+  font-size: 1rem !important;
 }
 
 /*MediaQuery for Mobile*/

@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedinIn, FaEnvelope, FaStackOverflow } from 'react-icons
 import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  // let date = new Date();
+  // let year = date.getFullYear();
 
   return (
     <Container fluid className='footer px-5'>
@@ -18,7 +18,7 @@ function Footer() {
           <a className='cmb-fa m-2' href='https://www.linkedin.com/in/cailinbellwold/' target='_blank' rel="noreferrer">
             <FaLinkedinIn />
           </a>
-          <a className='cmb-fa m-2' href='https://github.com/CailinBellWold/Portfolio-React/' target='_blank' rel="noreferrer"> 
+          <a className='cmb-fa m-2' href='https://github.com/CailinBellWold/Portfolio/' target='_blank' rel="noreferrer"> 
             <FaGithub />
           </a>
           <a className='cmb-fa m-2' href='mailto:cmbellwold@gmail.com?subject=Contact from Portfolio Site' target='_blank' rel="noreferrer">

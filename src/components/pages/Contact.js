@@ -4,10 +4,11 @@ import { useForm } from 'react-hook-form';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+// import { FormControl } from 'react-bootstrap/FormControl';
 
 export default function Contact() {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const [setResult] = useState('');
+    const [result, setResult] = useState('');
     const onSubmit = (data) => setResult(JSON.stringify(data));
 
   return (
@@ -59,23 +60,25 @@ export default function Contact() {
             </Form>
           </div>
 
+
 <div className='col-md-3 mt-2 text-center'>
   <ul className='list-unstyled mb-0'>
-    <li className='mb-3'><FaMapMarker />
+    <li className='cmb-fa-nolink mb-3'><FaMapMarker />
       <p>Seattle, WA 98102, USA</p>
     </li>
 
-    <li className='my-3'><FaPhone />
+    <li className='cmb-fa-nolink my-3'><FaPhone />
       <p>+ 01 206 660 6505</p>
     </li>
 
-    <li className='my-3'><FaEnvelope />
+    <li className='cmb-fa-nolink my-3'><FaEnvelope />
       <p>cmbellwold@gmail.com</p>
     </li>
   </ul>
 </div>
 
 </div>
+
 
 </section>
 </div>
