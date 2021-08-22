@@ -19,7 +19,7 @@ function Footer() {
           <a className='cmb-fa m-2' href='mailto:cmbellwold@gmail.com?subject=Contact from Portfolio Site' target='_blank' rel="noreferrer">
             <FaEnvelope />
           </a>
-          <p>© {year} Cailin Bell Wold</p>
+          <p>© {year} cailín bell wold</p>
         </Col>
       </Row>
     </Container>

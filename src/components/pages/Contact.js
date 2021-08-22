@@ -7,7 +7,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 export default function Contact() {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const [result, setResult] = useState('');
+    const [setResult] = useState('');
     const onSubmit = (data) => setResult(JSON.stringify(data));
 
   return (

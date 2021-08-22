@@ -13,11 +13,13 @@
   --c-lblue: #566a9c;
   --c-dgrey: #24292e;
   --c-grey: #333a41;
-  --c-lgrey: #464d55;
+  --c-lgrey: #6a6a6a;
+  --c-body: #1c1b1b;
 
   --c-silver: #c6b4ad;
   --c-dslategray: #2e3136;
   --c-ddslategray: #1d1f22;
+  --c-gray: #1c1b1b;
   --c-shadow: #644420;
   --c-lshadow: #90612b;
   --c-dwhitesmoke: #d6d0d0;
@@ -34,21 +36,28 @@
   --c-frenchblue: #3078b4;
   --c-dfrenchblue: #276292;
   --c-ddfrenchblue: #1a4a70;
+
   --c-white: #ffffff;
+  --c-footer: #e9d3d3;
+  --c-color1: #d39f93;
+  --c-color2: #9f8983;
+  --c-ddslategray: #1d1f22;
+  --c-linen: #f3ede9;
 }
 
 html {
   scroll-behavior: smooth;
-  line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: var(--c-llneutral);
 }
 
 body {
-  /* background-color: var(--c-llneutral); */
-  font-family: 'Public Sans', sans-serif;
-  color: var(--c-ddblue);
+  font-family: 'Roboto', sans-serif !important;
+  color: var(--c-lgrey) !important;
+  line-height: 1.625rem !important;
+  font-weight: 300 !important;
+  font-style: normal; 
 }
 
 main {
@@ -73,16 +82,37 @@ header {
   font-weight: 400;
   letter-spacing: 0.2em;
   color: var(--c-ddslategray) !important;
-  /* text-shadow: 8px 10px 10px var(--c-taupe); */
 }
 
-/* .navbar-brand span {
-  font-family: 'Playfair Display', serif;
-  font-size: .5em !important;
+.navbar-brand span {
+  font-family: 'Roboto', sans-serif;
+  font-size: .3em !important;
   font-weight: 500;
+  letter-spacing: 0.19em;
   margin-top: -3rem !important;
   color: var(--c-ddslategray) !important;
+  margin-left: 15em;
+}
+
+.nav-link {
+  padding: .5rem 1.5rem;
+  font-size: .9em !important;
+  color: var(--c-lgrey);
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+/* .nav-link:hover {
+  color: var(--c-ddslategray) !important;
+  font-weight: 500;
 } */
+
+a.nav-link.active {
+  border-bottom: .5px solid var(--c-raspberrysorbet) !important;
+  color: var(--c-ddslategray) !important;
+  font-weight: 500 !important;
+}
+
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -91,7 +121,6 @@ header {
   border-color: var(--c-raspberrysorbet);
   border-width: medium;
 } 
-
 
 #name {
   font-size: 1.15em;
@@ -104,7 +133,7 @@ h3,
 h4, 
 h5 {
   font-family: 'Lora', sans-serif;
-  /* font-weight: bolder; */
+  color: var(--c-ddslategray) !important;
 }
 
 .cmb-headshot {
@@ -121,10 +150,6 @@ h5 {
   text-decoration: none;
   color: var(--c-dpink);
 }
-
-/* #resume-text {
-  color: var(--c-dpink);
-} */
 
 .card {
   border-radius: 4px;
@@ -181,41 +206,30 @@ h5 {
   left: 0;
   bottom: 0;
   width: 100%;
-  border-top: 3pt solid var(--c-raspberrysorbet);
-  background-image: linear-gradient(var(--c-dslategray), var(--c-ddslategray));
-  color: var(--c-silver);
+  background-color: var(--c-raspberrysorbet);
+  color: var(--c-llneutral);
+  border-top: 1px solid var(--c-lraspberrysorbet);
 }
 
 .footer p {
-  padding-top: .75em;
+  font-family: 'Lora', serif;
+  padding-top: 1em;
   padding-left: .75em;
+  font-size: .9em !important;
+  color: var(--c-llneutral);
 }
 
 .cmb-fa {
+  padding-top: .3em;
   text-decoration: none;
-  color: var(--c-silver);
+  color: var(--c-llneutral);
   font-size: 1.25em;
 }
 
 .cmb-fa:hover {
-  color: var(--c-dpink);
-  text-shadow: 8px 10px 10px var(--c-taupe);
+  color: var(--c-dddraspberrysorbet);
+  text-shadow: 8px 10px 10px var(--c-lraspberrysorbet);
 }
-
-/* .cmb-contact {
-  background-image: linear-gradient(var(--c-dslategray), var(--c-ddslategray));
-  color: var(--c-silver);
-} */
-
-
-/* .cmb-contact {
-  background-color: var(--c-neutral);
-} */
-
-/* .cmb-madeforyou {
-  background-color: var(--c-taupe);
-  color: var(--c-lneutral);
-} */
 
 /*MediaQuery for Mobile*/
 @media screen and (max-width: 480px) {
