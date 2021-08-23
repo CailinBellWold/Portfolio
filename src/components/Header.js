@@ -30,8 +30,8 @@ function Header() {
       <header>
           <Navbar expand='lg' bg='light' fixed='top' className='px-5 py-4'>
             <Container>
-              <Navbar.Brand className='col-7' href='/'>cailín bell wold<br/><span>FULL STACK WEB DEVELOPER</span></Navbar.Brand>
-              <Navbar.Toggle className='custom-toggler' aria-controls='navbarCollapsableContent'/>
+              <Navbar.Brand className='col-5' href='/'>cailín bell wold<br/><span>FULL STACK WEB DEVELOPER</span></Navbar.Brand>
+              <Navbar.Toggle className='custom-toggler col-2' aria-controls='navbarCollapsableContent'/>
               <Navbar.Collapse className='flex-row-reverse' id='navbarCollapsableContent'>
                 <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
               </Navbar.Collapse>

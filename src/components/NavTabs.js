@@ -5,7 +5,7 @@ import { Nav } from 'react-bootstrap';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="navbar-nav mr-auto">
-      <Nav.Link className="active">
+      <Nav.Link>
         <a
           href="#about"
           onClick={() => handlePageChange('About')}

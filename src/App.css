@@ -1,61 +1,22 @@
 :root {
-  /* --c--black: #000000;
-  --c-dpink: #f30343;
-  --c-lneutral: #faf5f5;
-  --c-white: #ffffff;
-  --c-lblue: #566a9c;
-  --c-body: #1c1b1b;
-  --c-silver: #c6b4ad;
-  --c-dslategrey: #2e3136;
-  --c-ddslategrey: #1d1f22;
-  --c-shadow: #644420;
-  --c-lshadow: #90612b;
-  --c-dwhitesmoke: #d6d0d0;
-  --c-whitesmoke: #f5f5f5;
-  --c-lwhitesmoke: #ffffff;
-  --c-lraspberrysorbet: #cd4a77;
-  --c-raspberrysorbet: #db2565;
-  --c-draspberrysorbet: #d31759;
-  --c-ddraspberrysorbet: #c70448;
-  --c-dddraspberrysorbet: #ac003c;
-  --c-marigold: #feae51;
-  --c-dmarigold: #e49b48;
-  --c-ddmarigold:#d38b38;
-  --c-frenchblue: #3078b4;
-  --c-dfrenchblue: #276292;
-  --c-ddfrenchblue: #1a4a70;
-  --c-white: #ffffff;
-  --c-footer: #e9d3d3;
-  --c-color1: #d39f93;
-  --c-color2: #9f8983;
-  --c-linen: #f3ede9; */
-
-
+  --c-lneutral: #fdf9f9;
   --c-neutral: #f8e5e5;
-  --c-llneutral: #fdf9f9;
-
   --c-lgrey: #6a6a6a;
   --c-grey: #333a41;
   --c-dgrey: #24292e;
-  --c-ddslategrey: #1d1f22;
-
+  --c-ddgrey: #1d1f22;
   --c-lsienna: #e3a39c;
   --c-sienna: #b5434a;
-
+  --c-dsienna: #97363d;
   --c-taupe: #c39ea0;
   --c-dtaupe: #947879;
-
-  --c-blue: #3b465d;
-  --c-dblue: #14213d;
-  --c-ddblue: #0a111f;
-
 }
 
 html {
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: var(--c-llneutral);
+  background-color: var(--c-lneutral);
 }
 
 body {
@@ -69,16 +30,16 @@ body {
 main {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: var(--c-llneutral);
+  background-color: var(--c-lneutral);
 }
 
 header {
-  background-color: var(--c-llneutral);
+  background-color: var(--c-lneutral);
 }
 
 .navbar {
   height: 6rem !important;
-  background-color: var(--c-llneutral);
+  background-color: var(--c-lneutral);
 }
 
 .navbar-brand {
@@ -87,7 +48,7 @@ header {
   height: 4rem !important;
   font-weight: 400;
   letter-spacing: 0.2em;
-  color: var(--c-ddslategrey) !important;
+  color: var(--c-ddgrey) !important;
 }
 
 .navbar-brand span {
@@ -96,7 +57,7 @@ header {
   font-weight: 500;
   letter-spacing: 0.19em;
   margin-top: -3rem !important;
-  color: var(--c-ddslategrey) !important;
+  color: var(--c-ddgrey) !important;
   margin-left: 15em;
   color: var(--c-sienna) !important;
 }
@@ -106,33 +67,20 @@ header {
   font-size: .9em !important;
   color: var(--c-lgrey);
   text-decoration: none;
+  background-color: var(--c-lneutral);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-/* .nav-link:hover {
-  color: var(--c-ddslategrey) !important;
-  font-weight: 500;
-} */
-
-a.nav-link.active {
+.nav-link.active {
   border-bottom: .5px solid var(--c-sienna) !important;
-  color: var(--c-ddslategrey) !important;
+  color: var(--c-ddgrey) !important;
   font-weight: 500 !important;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: var(--c-sienna);
-  border-width: medium;
+.custom-toggler {
+  border-color: var(--c-sienna) !important;
+  border-width: thick;
 } 
-
-#name {
-  font-size: 1.15em;
-  font-weight: bold;
-}
 
 h1,
 h2, 
@@ -140,38 +88,25 @@ h3,
 h4, 
 h5 {
   font-family: 'Lora', sans-serif;
-  color: var(--c-ddslategrey) !important;
+  color: var(--c-ddgrey) !important;
 }
 
 .cmb-headshot {
   box-shadow: 8px 10px 10px var(--c-taupe);
-  border: .02em solid var(--c-llneutral);
+  border: .02em solid var(--c-lneutral);
 }
 
 .cmb-neutralblock {
   background-color: var(--c-sienna);
-  /* border: .02em solid var(--c-llneutral); */
 }
 
 .cmb-neutralblock h4 {
-  color: var(--c-llneutral) !important;
-  /* border: .02em solid var(--c-llneutral); */
+  color: var(--c-lneutral) !important;
 }
 
 .cmb-neutralblock p {
-  color: var(--c-llneutral);
-  /* border: .02em solid var(--c-llneutral); */
+  color: var(--c-lneutral);
 }
-
-/* .about-contact {
-  padding-left: 1em;
-  padding-top: 1em;
-} */
-
-/* .resume {
-  text-decoration: none;
-  color: var(--c-dpink);
-} */
 
 .card {
   border-radius: 4px;
@@ -190,8 +125,8 @@ h5 {
 .btn-primary,
 .btn-primary:active,
 .btn-primary:visited {
-  background-color: var(--c-ddblue);
-  border: .1em solid var(--c-taupe);
+  background-color: var(--c-dsienna) !important;
+  border: .1em solid var(--c-sienna) !important;
   border-radius: 10px;
   box-shadow: 8px 10px 10px var(--c-taupe);
   margin: .5em 1em 1em 0;
@@ -199,8 +134,8 @@ h5 {
 }
 
 .btn-primary:hover {
-  background-color: var(--c-dblue);
-  border: .1em solid var(--c-blue);
+  background-color: var(--c-sienna) !important;
+  border: .1em solid var(--c-lsienna) !important;
   box-shadow: 8px 10px 10px var(--c-dtaupe);
   transform: scale(1.04);
 }
@@ -208,8 +143,8 @@ h5 {
 .btn-secondary,
 .btn-secondary:active,
 .btn-secondary:visited {
-  background-color: var(--c-dgrey);
-  border: .1em solid var(--c-grey);
+  background-color: var(--c-dgrey) !important;
+  border: .1em solid var(--c-grey) !important;
   border-radius: 10px;
   box-shadow: 8px 10px 10px var(--c-taupe);
   margin: .5em 1em 1em 0;
@@ -217,8 +152,8 @@ h5 {
 }
 
 .btn-secondary:hover {
-  background-color: var(--c-grey);
-  border: .1em solid var(--c-lgrey);
+  background-color: var(--c-grey) !important;
+  border: .1em solid var(--c-lgrey) !important;
   box-shadow: 8px 10px 10px var(--c-dtaupe);
   transform: scale(1.04);
 }
@@ -228,7 +163,7 @@ h5 {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--c-llneutral);
+  background-color: var(--c-lneutral);
   color: var(--c-lsienna);
   background: linear-gradient(to left, rgba(253, 249, 249, 1) 0%,rgba(255,255,255,0) 45%);
 }
@@ -274,9 +209,14 @@ h5 {
     padding-top: 6rem;
   }
 
-  .navbar-brand {
-    font-size: 1rem !important;
+  .navbar {
+    padding: 0rem;
   }
+
+  .navbar-brand {
+    max-width: 50%;
+  }
+
   .navbar-brand span {
     display: none !important;
   }
@@ -303,6 +243,7 @@ h5 {
     padding: 2px !important;
     margin: 0px !important;
   }
+
   .cmb-cr {
     display: none !important;
   }

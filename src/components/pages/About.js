@@ -1,11 +1,12 @@
 import React from 'react';
 import Headshot from "../../assets/Headshot-Square.jpg";
+import { Container, Row } from 'react-bootstrap';
 
 export default function About() {
   return (
-    <div className='container'>
+    <Container>
       <section id='about'>
-        <div className='row'>
+        <Row>
           <div className='col-sm-6 col-md-2 pr-3 mb-4'>
             <figure className='figure-image'>
             <img src={Headshot} alt='Headshot of Cailin wearing a black shirt and looking at the camera.' className='img-fluid mb-3 cmb-headshot'/>
@@ -16,11 +17,10 @@ export default function About() {
               <p>My name is Cailín and I'm a nonprofit finance and operations professional and web developer who will be graduating with a certificate from the University of Washington’s Full Stack Boot Camp (MERN) in September of 2021. I’m quickly building new competencies and seeking full-time employment. Additionally, I'm actively seeking projects or collaborations that allow me to gain experience and expand my professional network.</p>
               <p>With a background in nonprofit finance and administration and a passion for the arts, intersectional environmentalism, and tackling complex challenges, I have spent my career creating systems and order to support artists and others working in the humanity sector. </p>
               <p>Coding allows me to be a more agile and versatile problem-solver, creating bridges between storytellers and audiences, problems and problem-solvers, and data and decision-makers. It opens doors and allows ideas to flourish and provides a more formally creative element in my professional toolkit.</p>
-              
-              </div>
           </div>
+          </Row>
 
-          <div className='row'>
+          <Row>
           <div className='cmb-neutralblock p-4 '>
               <h4>could we flourish together?</h4>
               <p>
@@ -28,8 +28,8 @@ export default function About() {
               If you think we might work well together, please reach out! I look forward to hearing from you.
               </p>
               </div>
-              </div>
+          </Row>
       </section>
-    </div>
+    </Container>
   );
 }

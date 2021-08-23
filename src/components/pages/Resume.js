@@ -8,7 +8,7 @@ export default function Resume() {
     <div className='container'>
       <section id='skills'>
         <h1 className='text-center mb-1'>skills</h1>
-        <p className='text-center'><Button className='text-center' href={CV} target="_blank"><FaFileDownload /> Download CV</Button></p>
+        <p className='text-center'><Button className='btn-primary text-center' href={CV} target="_blank"><FaFileDownload /> Download CV</Button></p>
         <hr/>
 
         <div className='row'>
