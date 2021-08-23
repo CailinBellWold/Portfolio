@@ -31,7 +31,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className='col-lg-4 col-md-12 p-4'>
+          <div className='col-lg-4 col-md-6 p-4'>
             <div className='card'>
               <div className='bg-image'>
                 <img src={MoodTracker} className='img-fluid' alt='Screenshot from Mood Tracker App'/>

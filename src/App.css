@@ -1,25 +1,13 @@
 :root {
-  --c--black: #000000;
+  /* --c--black: #000000;
   --c-dpink: #f30343;
-  --c-dtaupe: #947879;
-  --c-taupe: #c39ea0;
-  --c-neutral: #f8e5e5;
   --c-lneutral: #faf5f5;
-  --c-llneutral: #fdf9f9;
   --c-white: #ffffff;
-  --c-ddblue: #0a111f;
-  --c-dblue: #14213d;
-  --c-blue: #3b465d;
   --c-lblue: #566a9c;
-  --c-dgrey: #24292e;
-  --c-grey: #333a41;
-  --c-lgrey: #6a6a6a;
   --c-body: #1c1b1b;
-
   --c-silver: #c6b4ad;
-  --c-dslategray: #2e3136;
-  --c-ddslategray: #1d1f22;
-  --c-gray: #1c1b1b;
+  --c-dslategrey: #2e3136;
+  --c-ddslategrey: #1d1f22;
   --c-shadow: #644420;
   --c-lshadow: #90612b;
   --c-dwhitesmoke: #d6d0d0;
@@ -36,15 +24,31 @@
   --c-frenchblue: #3078b4;
   --c-dfrenchblue: #276292;
   --c-ddfrenchblue: #1a4a70;
-
   --c-white: #ffffff;
   --c-footer: #e9d3d3;
   --c-color1: #d39f93;
   --c-color2: #9f8983;
-  --c-ddslategray: #1d1f22;
-  --c-linen: #f3ede9;
-  --c-sienna: #b5434a;
+  --c-linen: #f3ede9; */
+
+
+  --c-neutral: #f8e5e5;
+  --c-llneutral: #fdf9f9;
+
+  --c-lgrey: #6a6a6a;
+  --c-grey: #333a41;
+  --c-dgrey: #24292e;
+  --c-ddslategrey: #1d1f22;
+
   --c-lsienna: #e3a39c;
+  --c-sienna: #b5434a;
+
+  --c-taupe: #c39ea0;
+  --c-dtaupe: #947879;
+
+  --c-blue: #3b465d;
+  --c-dblue: #14213d;
+  --c-ddblue: #0a111f;
+
 }
 
 html {
@@ -83,7 +87,7 @@ header {
   height: 4rem !important;
   font-weight: 400;
   letter-spacing: 0.2em;
-  color: var(--c-ddslategray) !important;
+  color: var(--c-ddslategrey) !important;
 }
 
 .navbar-brand span {
@@ -92,7 +96,7 @@ header {
   font-weight: 500;
   letter-spacing: 0.19em;
   margin-top: -3rem !important;
-  color: var(--c-ddslategray) !important;
+  color: var(--c-ddslategrey) !important;
   margin-left: 15em;
   color: var(--c-sienna) !important;
 }
@@ -106,13 +110,13 @@ header {
 }
 
 /* .nav-link:hover {
-  color: var(--c-ddslategray) !important;
+  color: var(--c-ddslategrey) !important;
   font-weight: 500;
 } */
 
 a.nav-link.active {
   border-bottom: .5px solid var(--c-sienna) !important;
-  color: var(--c-ddslategray) !important;
+  color: var(--c-ddslategrey) !important;
   font-weight: 500 !important;
 }
 
@@ -136,7 +140,7 @@ h3,
 h4, 
 h5 {
   font-family: 'Lora', sans-serif;
-  color: var(--c-ddslategray) !important;
+  color: var(--c-ddslategrey) !important;
 }
 
 .cmb-headshot {
@@ -164,10 +168,10 @@ h5 {
   padding-top: 1em;
 } */
 
-.resume {
+/* .resume {
   text-decoration: none;
   color: var(--c-dpink);
-}
+} */
 
 .card {
   border-radius: 4px;
