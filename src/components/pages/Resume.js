@@ -58,7 +58,7 @@ export default function Resume() {
                   <li>GraphQL</li>
                   <li>Heroku</li>
                   <li>Insomnia</li>
-                  <li>Visual Studio</li>
+                  <li>Visual Studio Code</li>
                 </ul>
               </div>
 
